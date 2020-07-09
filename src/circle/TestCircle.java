@@ -16,11 +16,11 @@ class Circle {
         this.radius = r;
     }
 
-    void display(){
-        System.out.println("Hình tròn bán kính " + radius + " màu " + color);
+    String getColor() {
+        return color;
     }
 
-    double getRadius(double radius) {
+    double getRadius() {
         return radius;
     }
 
@@ -32,7 +32,6 @@ class Circle {
 public class TestCircle {
     public static void main(String[] args) {
         Circle circle = new Circle(5);
-        circle.display();
-        System.out.println("Chu vi hình tròn là: " + circle.getArea());
+        System.out.println("Hình tròn bán kính " + circle.getRadius() + " màu " + circle.getColor() + " có chu vi là: " + circle.getArea());
     }
 }
